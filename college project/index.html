@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form validation</h1>
+   <script src="form.js"></script>
+   <script src="password.js"></script>
+    <link rel="stylesheet" href="form.css">
+    
+       <form action="/myform.php" name="myForm" onsubmit="return validateform()">
+
+   <div class="formdesign" id="fname" >
+    Name:<input type="text" name="Name" placeholder="Name" required >
+    <span class="formerror"></span></div>
+    
+    <div class="formdesign" id="femail">
+        Email: <input type="text" name="Email" placeholder="abc123@gmail.com" required >
+        <span class="formerror"></span></div>
+
+<div class="formdesign" id="fphone">
+    Phone:<input type="text" name="Phone number" placeholder="Phone number" required >
+    <span class="formerror"></span></div>
+
+<div class="formdesign" id="fpassword">
+    Password: <input type="password" name="password" placeholder="Password" required >
+    <span class="formerror"></span></div>
+
+<div class="formdesign" id="fpassword">
+    Confirm Password: <input type="password" name="cPassword" placeholder="Confirm password" required >
+    <span  class="formerror"></span></div>
+   <!--<div class="formdesign" id="psw">password<input type="text" name="password">
+   <span class="errer"></span></div>-->
+<input type="submit" name="submit"class="btn">
+</form>
+    <body>
+</html>
